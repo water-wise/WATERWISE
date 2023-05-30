@@ -7,7 +7,7 @@ from numerize import numerize
 preprocessor = pickle.load(open('resources/preprocessor.pkl','rb'))
 model = pickle.load(open('resources/model.pkl','rb'))
 
-st.title('Aqua Security for All')
+st.title('ASFA')
 
 columns = st.columns(4)
 with columns[0]:
