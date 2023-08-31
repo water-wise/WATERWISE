@@ -54,7 +54,7 @@ We retrained the models using these new features and the low cardinality categor
 Based on the training results, we selected the `CatBoostRegressor` as the final model. We then retrained this model using the top 14 most important features from the feature importance plot. Finally, we evaluated the trained model on the unseen test set, yielding a mean absolute error of about 2.3 million USD, consistent with the validation error. We used the preprocessor and final model to build an intuitive online price predictor.
 
 ## Prediction Tool (ASFA)
-The online prediction tool, named ASFA (Aqua Security for All), uses the pickled model and preprocessor to handle user inputs and generate appropriate predictions. This prediction represents the minimum investment, in US Dollars, required to build a desalination plant with a given set of features.
+The online prediction tool, named [ASFA](https://water-wise-waterwise-app-oks5jq.streamlit.app/) (Aqua Security for All), uses the pickled model and preprocessor to handle user inputs and generate appropriate predictions. This prediction represents the minimum investment, in US Dollars, required to build a desalination plant with a given set of features.
 
 ## Conclusion
 The technical specifications of a desalination plant are generally indicative of its price. While location variables like continent might offer some information, a plant’s price is heavily reliant on the salinity of the water to be treated, the desired salinity of the output, the plant's size, the amount of water to be produced, its desalination process, its model, and other technical factors.
